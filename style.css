@@ -1,53 +1,81 @@
+/* Style Apple-like : sobre, élégant, typographie inter */
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: #f5f5f5;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #111;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-header {
-  background-color: #1e1e2f;
-  color: white;
-  padding: 2rem 1rem;
+.hero {
   text-align: center;
+  padding: 10vh 2rem 5vh;
+  background: linear-gradient(180deg, #f5f5f7 0%, #fff 100%);
 }
 
-header h1 {
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
   margin: 0;
-  font-size: 2.5rem;
 }
 
-nav a {
-  margin: 0 1rem;
-  color: #ccc;
-  text-decoration: none;
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  margin-top: 1rem;
 }
 
-nav a:hover {
-  color: white;
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  border-bottom: 1px solid #eaeaea;
 }
 
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
-section {
-  margin-bottom: 2.5rem;
+.section-content,
+.project p {
+  font-size: 1.125rem;
+  color: #333;
+}
+
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline li {
+  margin-bottom: 2rem;
 }
 
 .project {
-  background: white;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-left: 4px solid #007acc;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #1e1e2f;
-  color: white;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background-color: #f5f5f7;
+  color: #777;
 }

@@ -1,53 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Max Szostkiewicz – Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Max Szostkiewicz – Ingénieur Informatique</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Max Szostkiewicz</h1>
-    <p>Ingénieur en informatique</p>
-    <nav>
-      <a href="#about">À propos</a>
-      <a href="#projects">Projets</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="hero">
+    <h1 class="hero-title">Max Szostkiewicz</h1>
+    <p class="hero-subtitle">Ingénieur en informatique</p>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>À propos</h2>
-      <p>Je suis ingénieur en informatique passionné par le développement logiciel, les technologies web et la création de solutions robustes et évolutives.</p>
-    </section>
+  <section class="section" id="about">
+    <h2 class="section-title">À propos</h2>
+    <p class="section-content">Ingénieur passionné par le développement web, l'accessibilité et l'expérience utilisateur. J’aime concevoir des interfaces élégantes et performantes, en alliant design minimaliste et efficacité technique.</p>
+  </section>
 
-    <section id="projects">
-      <h2>Projets</h2>
-      <div class="project">
-        <h3>Projet A</h3>
-        <p>Une application web développée avec React et Node.js pour faciliter la gestion de tâches.</p>
-        <a href="#">Voir sur GitHub</a>
-      </div>
-      <div class="project">
-        <h3>Projet B</h3>
-        <p>Un site statique léger pour présenter des données publiques via des visualisations interactives.</p>
-        <a href="#">Voir la démo</a>
-      </div>
-    </section>
+  <section class="section" id="experience">
+    <h2 class="section-title">Expérience professionnelle</h2>
+    <ul class="timeline">
+      <li>
+        <h3>Développeur Front-End – TechNova (2022–2025)</h3>
+        <p>Développement d’interfaces en React, amélioration des performances front, mise en place de tests automatisés.</p>
+      </li>
+      <li>
+        <h3>Stage Ingénieur</h3>
+        <p>Développement d’outils internes, automatisation de tâches en Python et JavaScript.</p>
+      </li>
+    </ul>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>max.szostkiewicz@email.com</p>
-      <p><a href="https://www.linkedin.com/in/tonprofil/">LinkedIn</a></p>
-    </section>
-  </main>
+  <section class="section" id="education">
+    <h2 class="section-title">Études</h2>
+    <ul class="timeline">
+      <li>
+        <h3>Diplôme d’ingénieur</h3>
+        <p>Spécialisation en informatique</p>
+      </li>
+      <li>
+        <h3>Baccalauréat Scientifique – Mention Très Bien</h3>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 class="section-title">Projets</h2>
+    <div class="project">
+      <h3>MotionBoard</h3>
+      <p>Application de gestion de projets visuelle, en React avec Firebase. Collaboration en temps réel et animations fluides.</p>
+    </div>
+    <div class="project">
+      <h3>DevDash</h3>
+      <p>Tableau de bord open-source pour développeurs : suivi GitHub, CI/CD, productivité. Projet personnel en TypeScript + API REST.</p>
+    </div>
+  </section>
+
+  <section class="section" id="passions">
+    <h2 class="section-title">Passions</h2>
+    <p class="section-content">UI design, photographie urbaine, randonnée en montagne, musique</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email : <a href="mailto:example@mail.com">example@mail.com</a></p>
+    <p>LinkedIn : <a href="https://linkedin.com" target="_blank">linkedin.com</a></p>
+    <p>GitHub : <a href="https://github.com" target="_blank">github.com</a></p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Max Szostkiewicz. Tous droits réservés.</p>
+    <p>&copy; 2025 Max Szostkiewicz – Tous droits réservés</p>
   </footer>
 
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="script.js"></script>
 </body>
 </html>
